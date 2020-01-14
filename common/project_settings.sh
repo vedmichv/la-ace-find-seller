@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # The name of the project to deploy services into.
-PROJECT_NAME="ace-demo-2"
+PROJECT_NAME="la-gcae"
 
 # Which default region should regional services use?
 PROJECT_REGION="us-central1"
@@ -21,32 +21,32 @@ ORGANIZATION="find-seller"
 
 # This is the Storage bucket used for public assets. 
 # The entire bucket is public by default
-PUBLIC_ASSETS="fs2-public-bucket"
+PUBLIC_ASSETS="fs2-vv-public-bucket"
 
 # This is the Storage bucket used for private assets. 
 # The entire bucket is private by default
-PRIVATE_ASSETS="fs2-private-bucket"
+PRIVATE_ASSETS="fs2-vv-private-bucket"
 
 # The name of the Pubsub topic to create / use
-PUB_SUB_TOPIC="fs2-items"
+PUB_SUB_TOPIC="fs2-vv-items"
 
 # The name of the custom network for the product and ads services
-SERVICES_NETWORK="fs2-app-network"
+SERVICES_NETWORK="fs2-vv-app-network"
 
 # The name of the product service subnet
-PRODUCT_SUBNET="fs2-prod-app-network-subnet"
+PRODUCT_SUBNET="fs2-vv-prod-app-network-subnet"
 
 # The name of the product service subnet
-ADS_SUBNET="fs2-ad-app-network-subnet"
+ADS_SUBNET="fs2-vv-ad-app-network-subnet"
 
 # The name of the Kubernetes cluster used for the products service
-PRODUCT_CLUSTER_NAME="fs2-app-clusters"
+PRODUCT_CLUSTER_NAME="fs2-vv-app-clusters"
 
 # The name of the spanner instance
-PRODUCT_DB_INSTANCE_NAME="fs2-app-spanner-instance"
+PRODUCT_DB_INSTANCE_NAME="fs2-vv-app-spanner-instance"
 
 # The name of the spanner db
-PRODUCT_DB_NAME="fs2-app-spanner-db"
+PRODUCT_DB_NAME="fs2-vv-app-spanner-db"
 
 # The service account to use to launch the compute engine instances.
 COMPUTE_ENGINE_SERVICE_ACCOUNT=$(gcloud iam service-accounts list --filter='displayName:"Compute Engine default service account"' --format='value(email)')
